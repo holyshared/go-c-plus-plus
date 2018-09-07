@@ -1,6 +1,6 @@
 GO_C_BIN=go_c_bin
 
-ENTRY_CLANG=clang/main.go
+ENTRY_CLANG=main.go
 
 .PHONY: all test clean
 
