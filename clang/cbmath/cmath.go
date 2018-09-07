@@ -1,4 +1,4 @@
-package main
+package cbmath
 
 import (
 	//#cgo LDFLAGS: -lm
@@ -7,6 +7,7 @@ import (
 	"fmt"
 )
 
-func printSqrt(n int) {
+// PrintSqrt - C binding
+func PrintSqrt(n int) {
 	fmt.Println(C.sqrt(C.double(n)))
 }
