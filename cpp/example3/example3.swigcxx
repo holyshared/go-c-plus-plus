@@ -1,0 +1,6 @@
+%module example3
+%{
+#include    "example3.h"
+%}
+
+%include    "example3.h"

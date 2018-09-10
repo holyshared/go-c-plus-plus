@@ -5,6 +5,7 @@ import (
 
 	"github.com/holyshared/go-c-plus-plus/cpp/example1"
 	"github.com/holyshared/go-c-plus-plus/cpp/example2"
+	"github.com/holyshared/go-c-plus-plus/cpp/example3"
 )
 
 // Dump - Dump
@@ -20,4 +21,7 @@ func main() {
 	p.Display()
 	p.MoveRelative(1, 0)
 	p.Display()
+
+	fmt.Printf("%d\n", example3.Succ(1))
+	fmt.Printf("%d\n", example3.Succ(example3.Succ(1)))
 }
