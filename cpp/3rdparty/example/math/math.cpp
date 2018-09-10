@@ -1,6 +1,6 @@
 #include "math.h"
 
-namespace examplelib {
+namespace example {
   namespace math {
     int succ(int i) {
       return i + 1;

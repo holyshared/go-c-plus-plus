@@ -22,6 +22,6 @@ func main() {
 	p.MoveRelative(1, 0)
 	p.Display()
 
-	fmt.Printf("%d\n", example3.Succ(1))
-	fmt.Printf("%d\n", example3.Succ(example3.Succ(1)))
+	fmt.Printf("%d\n", example3.Math_succ(1))
+	fmt.Printf("%d\n", example3.Math_succ(example3.Math_succ(1)))
 }
