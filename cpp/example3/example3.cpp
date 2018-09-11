@@ -1,7 +1,8 @@
+#include "../3rdparty/example/math/math.h"
 #include "example3.h"
 
-namespace example {
-  int succ(int i) {
-    return i + 1;
-  }
+using namespace example::math;
+
+int Math_succ(int x) {
+  return succ(x);
 }

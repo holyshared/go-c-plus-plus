@@ -1,3 +1,3 @@
-namespace example {
-  int succ(int i);
-}
+#pragma once
+
+int Math_succ(int x);
