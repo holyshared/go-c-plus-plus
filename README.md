@@ -14,3 +14,23 @@ brew install go swig
 cd cpp
 make
 ```
+
+### Swig version
+
+```shell
+vagrant@ubuntu-xenial:~$ swig -version
+
+SWIG Version 3.0.8
+
+Compiled with g++ [x86_64-pc-linux-gnu]
+
+Configured options: +pcre
+
+Please see http://www.swig.org for reporting bugs and further information
+```
+
+### Go version
+
+```shell
+go version go1.6.2 linux/amd64
+```
