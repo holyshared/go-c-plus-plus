@@ -1,3 +1,7 @@
+/**
+ * math
+ */
+
 #include "math.h"
 
 namespace example {
