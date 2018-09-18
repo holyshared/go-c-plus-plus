@@ -7,6 +7,7 @@ import (
 	"github.com/holyshared/go-c-plus-plus/cpp/example2"
 	"github.com/holyshared/go-c-plus-plus/cpp/example3"
 	"github.com/holyshared/go-c-plus-plus/cpp/example4"
+	"github.com/holyshared/go-c-plus-plus/cpp/example5"
 )
 
 // Dump - Dump
@@ -58,9 +59,19 @@ func example4Test() {
 	fmt.Printf("s: %s\n", item4.GetSecond())
 }
 
+func example5Test() {
+	var out int
+	example5.Calc(5, &out)
+	fmt.Printf("out: %d\n", out)
+
+	example5.Calc(15, &out)
+	fmt.Printf("out: %d\n", out)
+}
+
 func main() {
 	example1Test()
 	example2Test()
 	example3Test()
 	example4Test()
+	example5Test()
 }
