@@ -1,0 +1,11 @@
+%module example4
+%{
+#include "example4.h"
+%}
+
+%include "std_string.i"
+%include "std_pair.i"
+%include "example4.h"
+
+%template(IntPair) std::pair<int, int>;
+%template(StringPair) std::pair<std::string, std::string>;

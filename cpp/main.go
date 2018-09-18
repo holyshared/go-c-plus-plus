@@ -6,6 +6,7 @@ import (
 	"github.com/holyshared/go-c-plus-plus/cpp/example1"
 	"github.com/holyshared/go-c-plus-plus/cpp/example2"
 	"github.com/holyshared/go-c-plus-plus/cpp/example3"
+	"github.com/holyshared/go-c-plus-plus/cpp/example4"
 )
 
 // Dump - Dump
@@ -35,8 +36,31 @@ func example3Test() {
 	p2.Display()
 }
 
+func example4Test() {
+	var item = example4.NewIntPair(1, 2)
+	defer example4.DeleteIntPair(item)
+
+	example4.Dump(item)
+
+	var item2 = example4.NewStringPair("a", "b")
+	defer example4.DeleteStringPair(item2)
+
+	example4.Dump2(item2)
+
+	var item3 = example4.NewStringPair("a", "b")
+	defer example4.DeleteStringPair(item3)
+
+	example4.Dump3(item3)
+
+	var item4 = example4.Dump4()
+	defer example4.DeleteStringPair(item4)
+	fmt.Printf("f: %s\n", item4.GetFirst())
+	fmt.Printf("s: %s\n", item4.GetSecond())
+}
+
 func main() {
 	example1Test()
 	example2Test()
 	example3Test()
+	example4Test()
 }
