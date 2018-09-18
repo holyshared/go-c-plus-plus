@@ -51,6 +51,11 @@ func example4Test() {
 	defer example4.DeleteStringPair(item3)
 
 	example4.Dump3(item3)
+
+	var item4 = example4.Dump4()
+	defer example4.DeleteStringPair(item4)
+	fmt.Printf("f: %s\n", item4.GetFirst())
+	fmt.Printf("s: %s\n", item4.GetSecond())
 }
 
 func main() {

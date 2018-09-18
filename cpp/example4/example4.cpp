@@ -28,3 +28,7 @@ int dump3(std::pair<std::string, std::string> p) {
   std::cout << "dump: ";
   return 0;
 }
+
+std::pair<std::string, std::string> dump4() {
+  return std::make_pair("a", "b");
+}
