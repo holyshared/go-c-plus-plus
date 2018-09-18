@@ -46,6 +46,11 @@ func example4Test() {
 	defer example4.DeleteStringPair(item2)
 
 	example4.Dump2(item2)
+
+	var item3 = example4.NewStringPair("a", "b")
+	defer example4.DeleteStringPair(item3)
+
+	example4.Dump3(item3)
 }
 
 func main() {
