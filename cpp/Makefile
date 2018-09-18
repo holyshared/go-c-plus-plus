@@ -7,6 +7,7 @@ cpp_bin: main.go
 	go install ./example1
 	go install ./example2
 	go install ./example3
+	CC=/usr/bin/gcc-7 go install ./example4
 	go build -o cpp_bin .
 
 clean:
